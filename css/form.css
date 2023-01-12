@@ -1,0 +1,89 @@
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-container, .form-container .input {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container {
+  gap: 2rem;
+}
+input {
+  padding-left: 1rem;
+}
+.form-container .input input, .input-date div input {
+  outline: none;
+  width: 100%;
+  height: 50px;
+  border: 2px solid var(--violet100);
+  border-radius: 5px;
+  font-size: 1.8rem;
+}
+
+.form-container .input input::placeholder {
+  color: var(--violet200);
+}
+
+ label {
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  color: var(--violet300);
+  font-weight: 500;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+}
+
+.input-group {
+  display: flex;
+  gap: 2rem;
+}
+
+.input-date div {
+  display: flex;
+  gap: 1rem;
+}
+
+.input-date div input {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.btn {
+  background: var(--violet300);
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: 500ms background;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+
+.input-date div input:focus, .form-container .input input:focus{
+  background: linear-gradient(#fff, #fff) padding-box,
+  linear-gradient(45deg, var(--linear-gradient)) border-box;
+  border: 2px solid transparent;
+}
+
+.input-date div input.invalid {
+  border-color: var(--red);
+}
+
+.error {
+  display: none;
+  color: var(--red);
+  font-size: 1.6rem;
+}
