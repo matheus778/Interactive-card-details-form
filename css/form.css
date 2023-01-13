@@ -77,8 +77,8 @@ input {
   border: 2px solid transparent;
 }
 
-.input-date div input.invalid {
-  border-color: var(--red);
+ div input.invalid {
+  border-color: var(--red) !important;
 }
 
 .error {
